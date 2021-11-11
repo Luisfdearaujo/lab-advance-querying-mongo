@@ -162,9 +162,10 @@ You already know how this goes, so let's start working:
 
 18. All the companies that have been acquired in the first trimester of the year. Limit the search to 10 companies, and retrieve only their `name` and `acquisition` fields.
 
-    **{ founded_month: {$lt:3 }  }**
+    **{"acquisition.acquired_month": {$lte: 3}}
+**
 
-    Proj: **{ founded_month: {$lt:3 }  }**
+    Proj: **{name:1, acquisition:1,_id:0}**
 
     Limit: **10**
 
