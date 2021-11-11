@@ -146,7 +146,7 @@ You already know how this goes, so let's start working:
 
 15. All the companies that have been founded on the first seven days of the month, including the seventh. Sort them by their `acquisition price` in descending order. Limit the search to 10 documents.
 
-    **{ founded_day: { $gte: 7  }  }**
+    **{ founded_day: { $lte: 7  }  }**
 
     Sort: **{"acquisitions.price_amount":-1}**
 
