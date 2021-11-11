@@ -95,7 +95,8 @@ You already know how this goes, so let's start working:
 
    **{ $and: [ { number_of_employees:{$lt: 1000}}, {founded_year:{$lt: 2005} } ] }**
 
-   Sort: **{ number_of_employees:1}**
+   Sort: **{number_of_employees:-1}**
+   limit: **10**
 
 6. All the companies that don't include the `partners` field.
 
