@@ -152,9 +152,9 @@ You already know how this goes, so let's start working:
 
 16. All the companies on the 'web' `category` that have more than 4000 employees. Sort them by the number of employees in ascending order.
 
-    **{ $and: [ { category_code:"web"}, { number_of_employees: {$gte:4000 }  }]}**
+    **{ $and: [ { category_code:"web"}, { number_of_employees: {$gt:4000 }  }]}**
 
-    Sort: **{number_of_employees:-1}**
+    Sort: **{number_of_employees:1}**
 
 17. All the companies whose acquisition amount is more than 10.000.000 and the currency is 'EUR'.
 
