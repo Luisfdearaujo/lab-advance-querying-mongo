@@ -158,7 +158,7 @@ You already know how this goes, so let's start working:
 
 17. All the companies whose acquisition amount is more than 10.000.000 and the currency is 'EUR'.
 
-    **{$and :[{"acquisitions.price_amount":{$gt: 10000000}},{"acquisition.price_currency_code":"EUR"}]}**
+    **{$and :[{"acquisition.price_amount":{$gt: 10000000}},{"acquisition.price_currency_code":"EUR"}]}**
 
 18. All the companies that have been acquired in the first trimester of the year. Limit the search to 10 companies, and retrieve only their `name` and `acquisition` fields.
 
